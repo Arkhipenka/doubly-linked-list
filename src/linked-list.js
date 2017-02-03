@@ -1,27 +1,52 @@
 const Node = require('./node');
 
 class LinkedList {
-    constructor() {}
+    constructor (Node) {
+        this.Node = require;
+        
+    }
 
-    append(data) {}
+    append(data) {
+        var a = new LinkedList;
+        a = 
 
-    head() {}
 
-    tail() {}
+    }
 
-    at(index) {}
+    head() {
+        
+    }
 
-    insertAt(index, data) {}
+    tail() {
+        
+    }
 
-    isEmpty() {}
+    at(index) {
+        
+    }
 
-    clear() {}
+    insertAt(index, data) {
+        
+    }
+    isEmpty() {
+        
+    }
 
-    deleteAt(index) {}
+    clear() {
+        
+    }
 
-    reverse() {}
+    deleteAt(index) {
+        
+    }
 
-    indexOf(data) {}
+    reverse() {
+        
+    }
+
+    indexOf(data) {
+        
+    }
 }
 
 module.exports = LinkedList;
