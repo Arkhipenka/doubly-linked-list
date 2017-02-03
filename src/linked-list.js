@@ -1,14 +1,16 @@
 const Node = require('./node');
 
 class LinkedList {
-    constructor (Node) {
+    constructor () {
         this.Node = require;
         
     }
 
     append(data) {
-        var a = new LinkedList;
-        a = 
+        var a = new LinkedList();
+        sayHi: function() {
+    	alert( 'Привет!' );
+  		}
 
 
     }
