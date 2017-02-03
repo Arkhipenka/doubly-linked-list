@@ -1,18 +1,19 @@
 const Node = require('./node');
 
 class LinkedList {
-    constructor () {
-        this.Node = require;
-        
+    constructor (name) {
+        this.name = name; 
     }
 
     append(data) {
-        var a = new LinkedList();
-        sayHi: function() {
-    	alert( 'Привет!' );
-  		}
-
-
+        var a = new Node(data)
+        append(node) {
+		if (this.tail) {
+		this.tail.nextNode = node;	
+		} else {
+		this.tail = node;
+		}
+		} 
     }
 
     head() {
@@ -35,10 +36,12 @@ class LinkedList {
     }
 
     clear() {
+
         
     }
 
     deleteAt(index) {
+
         
     }
 
