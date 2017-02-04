@@ -3,6 +3,7 @@ const Node = require('./node');
 class LinkedList {
     constructor() {
     	this.head = null;
+    	this.last = null;
     }
 
     append(data) {
@@ -29,14 +30,14 @@ class LinkedList {
     }
 
     insertAt(index, data) {
-    	if(this._head == null) {
-        this._head = new Node(val);
+    	if(this.head == null) {
+        this.head = new Node(val);
         } else {
         var aux = this._head;
-        this._head = new Node(val);
-        this._head.next = aux;
+        this.head = new Node(val);
+        this.head.next = aux;
         } 
-        this._length++; 
+        this.length++; 
         return true;   
     }
     isEmpty() {
@@ -44,12 +45,11 @@ class LinkedList {
     }
 
     clear() {
-    	LinkedList.prototype.clear = function () { 
     	this.first = null; 
     	this.last = null; 
     	this.length = 0; 
-		};  
-    }
+	}  
+    
 
     deleteAt(index) {
     	if(index >= 0 && index < this._length) {
@@ -71,8 +71,7 @@ class LinkedList {
     }    
 
     reverse() {
-        var reverseLinkedList = function(linkedlist) {
-  		var node = linkedlist;
+   		var node = linkedlist;
   		var previous = null;
   			while(node) {
     		node.next = previous;
@@ -80,10 +79,9 @@ class LinkedList {
     		if (node.next){
     		node = node.next
     		} else {
-     		 node = null;
+     		node = null;
    			}
   			}
-		}
     }
 
     indexOf(data) {
