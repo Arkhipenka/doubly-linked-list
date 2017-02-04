@@ -3,7 +3,7 @@ const Node = require('./node');
 class LinkedList {
     constructor() {
     	this.head = null;
-    	this.last = null;
+    	this.tail = null;
     }
 
     append(data) {
@@ -18,11 +18,29 @@ class LinkedList {
     }
 
     head() {
-    	        
+        var current = this.head,
+        i = 0;
+       	while(i < this.length) {
+        if(current.data === val) {
+        return i;
+        }
+        i++;
+        current = current.next;
+        }
+        return -1;    
     }
 
     tail() {
-        
+    	var current = this.tail,
+        i = 0;
+       	while(i < this.length) {
+        if(current.data === val) {
+        return i;
+        }
+        i++;
+        current = current.next;
+        }
+        return -1;      
     }
 
     at(index) {
@@ -40,6 +58,7 @@ class LinkedList {
         this.length++; 
         return true;   
     }
+
     isEmpty() {
         
     }
