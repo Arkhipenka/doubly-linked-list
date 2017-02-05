@@ -71,7 +71,7 @@ class LinkedList {
     
 
     deleteAt(index) {
-    	if(index >= 0 && index < this._length) {
+    	if(index >= 0 && index < this.length) {
             var curr = this._head;
             if(index == 0) {
             this._head = curr.next;
